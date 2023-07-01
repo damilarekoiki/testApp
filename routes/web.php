@@ -14,11 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/run-migration', function() {
-    Artisan::call('optimize:clear');
-    Artisan::call('migrate');
-});
-
 Route::get('/', function () {
     return view('welcome');
 });
